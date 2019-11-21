@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     
+             mc:Ignorable="d"
+             x:Class="CSC4330APP.Views.Registration">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+               
+                <Label Text="Already an existing User?Click here" HorizontalOptions="CenterAndExpand" Margin="30" WidthRequest="220" TextColor="#0fc0fc">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AlreadyExistingUserClicked"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label VerticalOptions="Center" FontAttributes="Bold" FontSize="Large" TextColor="#4cbb17" HorizontalOptions="Center">Registration Page</Label>
+                <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0">
+                        <Entry Placeholder="First Name" FontSize="16" x:Name="FirstNameEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="Middle Name" FontSize="16" x:Name="MiddleNameEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="Last Name" FontSize="16" x:Name="LastNameEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Entry Placeholder="University Name" FontSize="16" x:Name="UniversityNameEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="4">
+                        <Entry Placeholder="University Email" FontSize="16" x:Name="EmailEntry" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5">
+                        <Entry Placeholder="Country" FontSize="16" x:Name="CountryEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="6">
+                        <Entry Placeholder="State" FontSize="16" x:Name="StateEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="7">
+                        <Entry Placeholder="City" FontSize="16" x:Name="CityEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="8">
+                        <Entry Placeholder="Zipcode" FontSize="16" x:Name="ZipCodeEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="9">
+                        <Grid>
+                        <Label Text="Enroll as student?" Grid.Column="0" Grid.Row="0"/>
+                            <CheckBox x:Name="StudentCheckBox" Color="#4cbb17" Grid.Column="1" Grid.Row="0"></CheckBox>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="10">
+                        <Grid>
+                        <Label Text="Enroll as Mentor?" Grid.Column="0" Grid.Row="0"/>
+                            <CheckBox x:Name="MentorCheckBox" Color="#4cbb17" Grid.Column="1" Grid.Row="0"></CheckBox>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="11">
+                        <Entry Placeholder="Username" FontSize="16" x:Name="UserNameEntry" />
+                    </StackLayout>
+                   
+                    <StackLayout Grid.Row="12">
+                        <Entry Placeholder="Password" IsPassword="True" FontSize="16" x:Name="PasswordEntry" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="13">
+                        <Entry Placeholder="Re-Enter Password" IsPassword="True" FontSize="16" x:Name="RePasswordEntry" />
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="14">
+                        <Button Text="Register" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="#0fc0fc" Clicked="Button_Clicked"/>
+                    </StackLayout>
+                    
+                </Grid>
+
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

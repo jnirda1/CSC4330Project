@@ -1,0 +1,7 @@
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP.iOS\obj\iPhoneSimulator\Debug\CSC4330APP.iOS.csprojAssemblyReference.cache

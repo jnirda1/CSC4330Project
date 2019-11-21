@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CSC4330APP.Views.MyMentors">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Mentors:"
+                VerticalOptions="Start" Margin="50" TextColor="#4cbb17" FontSize="18" FontAttributes="Bold"
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout BackgroundColor="White">
+                <!-- Use your own layout and functionality here! -->
+                <CollectionView x:Name="collectionList" Margin="10">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="10" Margin="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Frame BackgroundColor="White" Grid.RowSpan="2" CornerRadius="5" Padding="10">
+                                    <Image    
+                       Source="iphone6.jpeg"    
+                       Aspect="AspectFill"    
+                       HeightRequest="100"    
+                       WidthRequest="100" />
+                                </Frame>
+                                <Label Grid.Column="1"    
+                       Text="{Binding MentorName}"    
+                       FontAttributes="Bold" />
+                                <Label Margin="0,20,0,0" Grid.Column="1"    
+                       Text="{Binding AreaOfInterest}"    
+                       FontAttributes="Bold" />
+                                <Label Grid.Row="1"    
+                       Grid.Column="1"    
+                       Text="{Binding University}"    
+                       VerticalOptions="End" />
+                                <Label Grid.Row="2"    
+                       Grid.Column="2" />
+
+
+
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </StackLayout>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

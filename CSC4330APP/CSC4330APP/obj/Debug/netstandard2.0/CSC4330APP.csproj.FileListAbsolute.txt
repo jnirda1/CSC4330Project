@@ -1,0 +1,17 @@
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\bin\Debug\netstandard2.0\CSC4330APP.deps.json
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\bin\Debug\netstandard2.0\CSC4330APP.dll
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\bin\Debug\netstandard2.0\ref\CSC4330APP.dll
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\bin\Debug\netstandard2.0\CSC4330APP.pdb
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\ForgotPassword.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\MyMentors.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\Registration.xaml.g.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\CSC4330APP.AssemblyInfoInputs.cache
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\CSC4330APP.AssemblyInfo.cs
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\CSC4330APP.dll
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\ref\CSC4330APP.dll
+C:\Users\baaji\source\repos\CSC4330APP\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\CSC4330APP.pdb

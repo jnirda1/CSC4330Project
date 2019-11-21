@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CSC4330APP.Views.Login">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to GuideMate"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="#4cbb17" FontAttributes="Bold" Margin="20"/>
+                <StackLayout>
+                   
+                    <Image Source="Guidemate.jpg" HeightRequest="140" WidthRequest="140" FlexLayout.AlignSelf="Center" BackgroundColor="Transparent" />
+                    <Label VerticalOptions="Center" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center">Sign In</Label>
+                    <Grid Margin="20,0,20,0" VerticalOptions="CenterAndExpand">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+
+
+                        </Grid.RowDefinitions>
+
+                        <StackLayout Grid.Row="0">
+                            <Entry Placeholder="User Name" FontSize="16" x:Name="UserNameEntry" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="1">
+                            <Entry Placeholder="Password" IsPassword ="True" FontSize="16" x:Name="PasswordEntry" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="2">
+                            <Button Text="Sign In" HorizontalOptions="CenterAndExpand"   WidthRequest="100" TextColor="White" BackgroundColor="#0fc0fc" Clicked="Button1_Clicked"/>
+                         </StackLayout>
+                        <StackLayout Grid.Row="3">
+                            <Grid>
+                                 <ComboBox IsEditable = "True" Height = "20" Width = "100" 
+         HorizontalAlignment = "Right" Margin = "0,77,180,212">
+                                    <ComboBoxItem Content = "Item #1"/>
+                                    <ComboBoxItem Content = "Item #2"/>
+                                    <ComboBoxItem Content = "Item #3"/>
+                                </ComboBox>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="4">
+                            <Label Text="Forgot Password?"   HorizontalOptions="Start" WidthRequest="200" TextColor="#0fc0fc">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="ForgotPasswordClicked"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                        <StackLayout Grid.Row="5">
+                            <Label Text="Not an Existing User?Sign Up" HorizontalOptions="CenterAndExpand"  Margin="50" WidthRequest="200" TextColor="#0fc0fc">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="SignUpClicked"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </StackLayout>
+                    </Grid>
+
+                </StackLayout>
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
