@@ -8,7 +8,7 @@ namespace CSC4330APP.Tables
     class UserRole
     {
         
-        public int UserId { get; set; }
+        public string userName { get; set; }
         
         public string Role { get; set; }
         

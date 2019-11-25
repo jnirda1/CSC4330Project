@@ -20,32 +20,43 @@ namespace CSC4330APP.Views
             InitializeComponent();
         }
 
-        async void Button1_Clicked(object sender, EventArgs e)
+        async void SignIn_Clicked(object sender, EventArgs e)
         {
+            //connecting to database 
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Guidemate.db");
             var db = new SQLiteConnection(dbpath);
-           
-            var check = db.Table<User>().Where(u => u.UserName.Equals(UserNameEntry.Text) && u.Password.Equals(PasswordEntry.Text)).FirstOrDefault();
-            if(check!= null)
+         //getting the user details and role from database and storing in variable
+            var validUser = (db.Table<User>().Where(u => u.UserName.Equals(UserNameEntry.Text) &&
+             u.Password.Equals(PasswordEntry.Text)).FirstOrDefault()); 
+             var role = db.Table<UserRole>().Where(ur => ur.userName.Equals(validUser.UserName) && ur.Role.Equals(picker.SelectedItem)).FirstOrDefault()?.Role;
+            //checking username and password correct
+            if (validUser != null)
             {
-                App.Current.MainPage = new NavigationPage(new Home());
+                //checking role
+                if (role == "Student")
+                {
+                    // App.Current.MainPage = new NavigationPage(new StudentHome(validUser.UserName));
+                    await Navigation.PushAsync(new StudentHome(validUser.UserName));
+                }
+                else if(role==null){
+                    await this.DisplayAlert("Error", "Select Correct Role", "ok");    
+                 
+            }
+                else if (role == "Mentor")
+                {
+                    App.Current.MainPage = new NavigationPage(new MentorHome());
+                }
+                
             }
             else
             {
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                    var result = await this.DisplayAlert("Error", "User Name or Password is incorrect", "Yes", "Cancel");
-                    Console.WriteLine(result);
-                    if (result)
-                    {
-                        App.Current.MainPage = new NavigationPage(new Login());
-                    }
-                    else
-                    {
-                        App.Current.MainPage = new NavigationPage(new Login());
-                    }
+                    await this.DisplayAlert("Error", "User Name or Password is incorrect", "ok");
+  
                 }
                   );
+
             }
         }
         async void SignUpClicked(object sender, EventArgs e)

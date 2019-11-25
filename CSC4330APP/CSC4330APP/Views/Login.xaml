@@ -33,18 +33,22 @@
                             <Entry Placeholder="Password" IsPassword ="True" FontSize="16" x:Name="PasswordEntry" />
                         </StackLayout>
                         <StackLayout Grid.Row="2">
-                            <Button Text="Sign In" HorizontalOptions="CenterAndExpand"   WidthRequest="100" TextColor="White" BackgroundColor="#0fc0fc" Clicked="Button1_Clicked"/>
-                         </StackLayout>
-                        <StackLayout Grid.Row="3">
-                            <Grid>
-                                 <ComboBox IsEditable = "True" Height = "20" Width = "100" 
-         HorizontalAlignment = "Right" Margin = "0,77,180,212">
-                                    <ComboBoxItem Content = "Item #1"/>
-                                    <ComboBoxItem Content = "Item #2"/>
-                                    <ComboBoxItem Content = "Item #3"/>
-                                </ComboBox>
-                            </Grid>
+                            <Picker x:Name="picker"
+                        Title="Login As?" >
+
+                                <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Student</x:String>
+                                    <x:String>Mentor</x:String>
+
+                                </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
                         </StackLayout>
+                        <StackLayout Grid.Row="3">
+                            <Button Text="Sign In" HorizontalOptions="CenterAndExpand"   WidthRequest="100" TextColor="White" BackgroundColor="#0fc0fc" Clicked="SignIn_Clicked"/>
+                         </StackLayout>
+                        
 
                         <StackLayout Grid.Row="4">
                             <Label Text="Forgot Password?"   HorizontalOptions="Start" WidthRequest="200" TextColor="#0fc0fc">

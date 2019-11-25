@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             mc:Ignorable="d"
+             x:Class="CSC4330APP.Views.AreaOfInterest">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+             </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0">
+             <controls:CheckBox DefaultText="Civil" x:Name="Civil" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="1">
+                <controls:CheckBox DefaultText="Mechanical" x:Name="Mechanical" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="2">
+                <controls:CheckBox DefaultText="Computers" x:Name="Computers" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="3">
+            <Button Text="Submit" Clicked="Submit_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

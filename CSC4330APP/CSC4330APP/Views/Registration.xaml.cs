@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Text.RegularExpressions;
 
 namespace CSC4330APP.Views
 {
@@ -61,22 +62,21 @@ namespace CSC4330APP.Views
                 Zipcode = ZipCodeEntry.Text,
                 UserName = UserNameEntry.Text,
                 Password = PasswordEntry.Text,
-                Role1 = role1,
-                Role2 = role2
+               
             };
             db.Insert(user);
 
             if ((StudentCheckBox.IsChecked == true && MentorCheckBox.IsChecked == true)){
                 var userRole = new UserRole()
                 {
-                    UserId = user.UserId,
+                    userName = user.UserName,
                     Role = role1,
 
 
                 };
                 var userRole1 = new UserRole()
                 {
-                    UserId = user.UserId,
+                    userName = user.UserName,
                     Role = role2,
 
                 };
@@ -87,7 +87,7 @@ namespace CSC4330APP.Views
             if ((StudentCheckBox.IsChecked == true && MentorCheckBox.IsChecked == false)){
                 var userRole = new UserRole()
                 {
-                    UserId = user.UserId,
+                    userName = user.UserName,
                     Role = role1,
 
 
@@ -100,7 +100,7 @@ namespace CSC4330APP.Views
             {
                 var userRole = new UserRole()
                 {
-                    UserId = user.UserId,
+                    userName = user.UserName,
                     Role = role2,
 
 
@@ -139,5 +139,41 @@ namespace CSC4330APP.Views
             // App.Current.MainPage = new NavigationPage(new Login());
             await Navigation.PushAsync(new Login());
         }
+     
+
+        async void Handle_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            var email = EmailEntry.Text;
+            Label errorLabel = ((Entry)sender).FindByName<Label>("errorMessage");
+            var emailPattern = @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$";
+            if (System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern))
+            {
+
+                errorMessage.Text = "Email is valid";
+            }
+            else
+            {
+
+                errorMessage.Text = "EMail is InValid";
+            }
+        }
+        //void HandleTextChanged(object sender, TextChangedEventArgs e)
+        //{
+
+        //    bool IsValid = false;
+        //    IsValid = (Regex.IsMatch(e.NewTextValue, pwRegex, RegexOptions.IgnoreCase));
+        //    ((Entry)sender).TextColor = IsValid ? Color.Default : Color.Red;
+
+        //    // LABEL CODE
+        //    Label errorLabel = ((Entry)sender).FindByName<Label>("errorMessage");
+        //    if (IsValid)
+        //    {
+        //        errorLabel.Text = "Passowrd Invalid or whatever!";
+        //    }
+        //    else
+        //    {
+        //        errorLabel.Text = "";
+        //    }
+        //}
     }
 }

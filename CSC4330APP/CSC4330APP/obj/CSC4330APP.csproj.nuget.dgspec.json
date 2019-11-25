@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\baaji\\source\\repos\\CSC4330APP\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj": {}
+    "C:\\Users\\baaji\\OneDrive\\Documents\\CSC4330APP\\CSC4330Project\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\baaji\\source\\repos\\CSC4330APP\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj": {
+    "C:\\Users\\baaji\\OneDrive\\Documents\\CSC4330APP\\CSC4330Project\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baaji\\source\\repos\\CSC4330APP\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj",
+        "projectUniqueName": "C:\\Users\\baaji\\OneDrive\\Documents\\CSC4330APP\\CSC4330Project\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj",
         "projectName": "CSC4330APP",
-        "projectPath": "C:\\Users\\baaji\\source\\repos\\CSC4330APP\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj",
+        "projectPath": "C:\\Users\\baaji\\OneDrive\\Documents\\CSC4330APP\\CSC4330Project\\CSC4330APP\\CSC4330APP\\CSC4330APP.csproj",
         "packagesPath": "C:\\Users\\baaji\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\baaji\\source\\repos\\CSC4330APP\\CSC4330APP\\CSC4330APP\\obj\\",
+        "outputPath": "C:\\Users\\baaji\\OneDrive\\Documents\\CSC4330APP\\CSC4330Project\\CSC4330APP\\CSC4330APP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "XLabs.Forms": {
+              "target": "Package",
+              "version": "[2.0.5782, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
