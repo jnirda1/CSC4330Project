@@ -11,8 +11,8 @@ namespace CSC4330APP
         {
             InitializeComponent();
 
-           // MainPage = new NavigationPage(new Login());
-           MainPage = new NavigationPage(new MyMentors());
+            MainPage = new NavigationPage(new Login());
+           //MainPage = new NavigationPage(new MyMentors());
         }
 
         protected override void OnStart()

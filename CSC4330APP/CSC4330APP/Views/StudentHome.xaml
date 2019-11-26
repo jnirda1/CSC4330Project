@@ -8,10 +8,12 @@
     <ContentPage.Content>
         <StackLayout>
             <Label FontSize="50">welcome</Label>
-            <Label x:Name="user"></Label>
+            <Label x:Name="user" FontSize="50"></Label>
+            <Button Text="LogOut" VerticalOptions="End" HorizontalOptions="End" Clicked="Logout_Clicked"/>
+       
 
             <StackLayout VerticalOptions="EndAndExpand">
-            <StackLayout BackgroundColor="White" VerticalOptions="End">
+            <StackLayout BackgroundColor="LightGray" VerticalOptions="End">
                 <Grid Margin="20,0,20,0" VerticalOptions="EndAndExpand" HorizontalOptions="EndAndExpand">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -19,18 +21,25 @@
                     </Grid.RowDefinitions>
 
                     <StackLayout Grid.Row="0" Grid.Column="0">
-                            <ImageButton  Source="home1" WidthRequest="100" HorizontalOptions="StartAndExpand" Clicked="Home_Clicked"  ></ImageButton>
+                            <ImageButton  Source="ic_home" WidthRequest="100" HorizontalOptions="StartAndExpand" Clicked="Home_Clicked"  ></ImageButton>
                     </StackLayout>
-                    <StackLayout Grid.Row="0" Grid.Column="1">
-                            <ImageButton  Source="search1" WidthRequest="100" HorizontalOptions="Center" Clicked="Search_Clicked"></ImageButton>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <ImageButton  Source="ic_add" WidthRequest="100" HorizontalOptions="StartAndExpand" Clicked="Add_Clicked"  ></ImageButton>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <ImageButton  Source="ic_search" WidthRequest="100" HorizontalOptions="Center" Clicked="Search_Clicked"></ImageButton>
                     </StackLayout>
-                    <StackLayout Grid.Row="0" Grid.Column="2">
-                        <ImageButton  Source="profile" WidthRequest="100" HorizontalOptions="EndAndExpand" Clicked="Profile_Clicked" ></ImageButton>
+                    <StackLayout Grid.Row="0" Grid.Column="3">
+                        <ImageButton  Source="ic_mentor" WidthRequest="100" HorizontalOptions="EndAndExpand" Clicked="Mymentors_Clicked" ></ImageButton>
                     </StackLayout>
-                
+                        <StackLayout Grid.Row="0" Grid.Column="4">
+                            <ImageButton  Source="ic_prof" WidthRequest="100" HorizontalOptions="EndAndExpand" Clicked="Profile_Clicked" ></ImageButton>
+                        </StackLayout>
 
 
-                </Grid>
+
+
+                    </Grid>
 
             </StackLayout>
 

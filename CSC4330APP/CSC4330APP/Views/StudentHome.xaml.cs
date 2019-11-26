@@ -29,17 +29,27 @@ namespace CSC4330APP.Views
 
         async void Profile_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Login());
+            await Navigation.PushAsync(new StudentProfile());
         }
 
         async void Home_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Login());
+            await Navigation.PushAsync(new StudentHome(userNameLookup));
         }
 
         async void Search_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Login());
+            await Navigation.PushAsync(new StudentSearch());
+        }
+
+        async void Add_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StudentAddAOI());
+        }
+
+        async void Mymentors_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MyMentors());
         }
     }
 }

@@ -25,5 +25,30 @@ namespace CSC4330APP.Views
 
             
         }
+
+        async void Home_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MentorHome());
+        }
+
+        async void Add_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MentorHome());
+        }
+
+        async void Search_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MentorSearch());
+        }
+
+        async void Mymentors_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MentorHome());
+        }
+
+        async void Profile_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MentorHome());
+        }
     }
 }
