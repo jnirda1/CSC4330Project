@@ -26,7 +26,6 @@ C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330AP
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\MentorSearch.xaml.g.cs
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\MyMentors.xaml.g.cs
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\Registration.xaml.g.cs
-C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\StudentAddAOI.xaml.g.cs
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\StudentHome.xaml.g.cs
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\StudentProfile.xaml.g.cs
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\Views\StudentSearch.xaml.g.cs
@@ -40,3 +39,4 @@ C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330AP
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\bin\Debug\netstandard2.0\ref\CSC4330APP.dll
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\bin\Debug\netstandard2.0\CSC4330APP.pdb
 C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\baaji\OneDrive\Documents\CSC4330APP\CSC4330Project\CSC4330APP\CSC4330APP\obj\Debug\netstandard2.0\CSC4330APP.csprojAssemblyReference.cache

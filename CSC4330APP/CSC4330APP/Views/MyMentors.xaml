@@ -12,7 +12,7 @@
                         HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <!--<ImageCell ImageSource="{Binding Image}" Text="{Binding Text}"/>-->
+                       
                         <ViewCell>
                             <Grid Padding="10">
                                 <Grid.RowDefinitions>
@@ -37,7 +37,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <ListView x:Name="Mentor"/>
+            
         </StackLayout>
     </ContentPage.Content>
 

@@ -12,41 +12,10 @@ using Xamarin.Forms.Xaml;
 
 namespace CSC4330APP.Views
 {
-    class mentorData
-    {
-        string mentorName;
-        string universtityName;
-
-        public string MentorName
-        {
-            get
-            {
-                return mentorName;
-            }
-            set
-            {
-                mentorName = value;
-            }
-        }
-
-        public string UniverstityName
-        {
-            get
-            {
-                return universtityName;
-            }
-            set
-            {
-                universtityName = value;
-            }
-        }
-    }
-
-
-        [XamlCompilation(XamlCompilationOptions.Compile)]
+     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MyMentors : ContentPage
     {
-            List<mentorData> students = new List<mentorData>();
+            
         public MyMentors()
         {
             InitializeComponent();
@@ -68,7 +37,7 @@ namespace CSC4330APP.Views
                
             }
             MentorsListView.ItemsSource = mentorDetails;
-            // MentorsListView.ItemsSource = mentorDetails;
+            
 
 
         }

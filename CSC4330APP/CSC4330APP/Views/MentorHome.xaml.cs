@@ -12,9 +12,12 @@ namespace CSC4330APP.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MentorHome : ContentPage
     {
-        public MentorHome()
+        public string userNameLookup;
+        public MentorHome(string userName)
         {
             InitializeComponent();
+            userNameLookup = userName;
+            user.Text = userName;
         }
 
         
@@ -28,12 +31,12 @@ namespace CSC4330APP.Views
 
         async void Home_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MentorHome());
+            await Navigation.PushAsync(new MentorHome(userNameLookup));
         }
 
-        async void Add_Clicked(object sender, EventArgs e)
+        async void AddAOI_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MentorHome());
+            await Navigation.PushAsync(new AreaOfInterest(userNameLookup));
         }
 
         async void Search_Clicked(object sender, EventArgs e)
@@ -43,12 +46,12 @@ namespace CSC4330APP.Views
 
         async void Mymentors_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MentorHome());
+            await Navigation.PushAsync(new MentorHome(userNameLookup));
         }
 
         async void Profile_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MentorHome());
+            await Navigation.PushAsync(new MentorHome(userNameLookup));
         }
     }
 }

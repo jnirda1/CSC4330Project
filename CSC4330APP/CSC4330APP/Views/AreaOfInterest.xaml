@@ -8,25 +8,70 @@
              mc:Ignorable="d"
              x:Class="CSC4330APP.Views.AreaOfInterest">
     <ContentPage.Content>
-        <Grid>
+        <ScrollView>
+            <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
-             </Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
             <StackLayout Grid.Row="0">
-             <controls:CheckBox DefaultText="Civil" x:Name="Civil" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+                <controls:CheckBox DefaultText="Agriculture" x:Name="Agriculture" HorizontalOptions="FillAndExpand" IsEnabled="True" />
             </StackLayout>
             <StackLayout Grid.Row="1">
-                <controls:CheckBox DefaultText="Mechanical" x:Name="Mechanical" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+                <controls:CheckBox DefaultText="Arfitial Intelligence" x:Name="ArfitialIntelligence" HorizontalOptions="FillAndExpand" IsEnabled="True" />
             </StackLayout>
             <StackLayout Grid.Row="2">
-                <controls:CheckBox DefaultText="Computers" x:Name="Computers" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+                <controls:CheckBox DefaultText="Astronomy" x:Name="Astronomy" HorizontalOptions="FillAndExpand" IsEnabled="True" />
             </StackLayout>
             <StackLayout Grid.Row="3">
+                <controls:CheckBox DefaultText="Biology" x:Name="Biology" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+             </StackLayout>
+            <StackLayout Grid.Row="4">
+                <controls:CheckBox DefaultText="Civil" x:Name="Civil" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="5">
+                <controls:CheckBox DefaultText="Computer Science" x:Name="ComputerScience" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="6">
+                <controls:CheckBox DefaultText="Chemistry" x:Name="Chemistry" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="7">
+                <controls:CheckBox DefaultText="Deep Learning" x:Name="DeepLearning" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="8">
+                <controls:CheckBox DefaultText="English" x:Name="English" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="9">
+                <controls:CheckBox DefaultText="Finance" x:Name="Finance" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="10">
+                <controls:CheckBox DefaultText="Machine Learning" x:Name="MachineLearning" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="11">
+                <controls:CheckBox DefaultText="Mathematics" x:Name="Mathematics" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="12">
+                <controls:CheckBox DefaultText="Mechanical" x:Name="Mechanical" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="13">
+                <controls:CheckBox DefaultText="Psychology" x:Name="Psychology" HorizontalOptions="FillAndExpand" IsEnabled="True" />
+            </StackLayout>
+            <StackLayout Grid.Row="14">
             <Button Text="Submit" Clicked="Submit_Clicked"/>
             </StackLayout>
         </Grid>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

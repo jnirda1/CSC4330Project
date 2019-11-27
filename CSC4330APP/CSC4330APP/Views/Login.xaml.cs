@@ -44,7 +44,7 @@ namespace CSC4330APP.Views
             }
                 else if (role == "Mentor")
                 {
-                    App.Current.MainPage = new NavigationPage(new MentorHome());
+                    App.Current.MainPage = new NavigationPage(new MentorHome(validUser.UserName));
                 }
                 
             }

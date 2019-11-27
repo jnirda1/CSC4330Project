@@ -17,20 +17,64 @@ namespace CSC4330APP.Views {
     public partial class AreaOfInterest : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox Agriculture;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox ArfitialIntelligence;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox Astronomy;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox Biology;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::XLabs.Forms.Controls.CheckBox Civil;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox ComputerScience;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox Chemistry;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox DeepLearning;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox English;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox Finance;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox MachineLearning;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::XLabs.Forms.Controls.CheckBox Mathematics;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::XLabs.Forms.Controls.CheckBox Mechanical;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::XLabs.Forms.Controls.CheckBox Computers;
+        private global::XLabs.Forms.Controls.CheckBox Psychology;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AreaOfInterest));
+            Agriculture = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Agriculture");
+            ArfitialIntelligence = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "ArfitialIntelligence");
+            Astronomy = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Astronomy");
+            Biology = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Biology");
             Civil = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Civil");
+            ComputerScience = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "ComputerScience");
+            Chemistry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Chemistry");
+            DeepLearning = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "DeepLearning");
+            English = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "English");
+            Finance = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Finance");
+            MachineLearning = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "MachineLearning");
+            Mathematics = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Mathematics");
             Mechanical = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Mechanical");
-            Computers = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Computers");
+            Psychology = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::XLabs.Forms.Controls.CheckBox>(this, "Psychology");
         }
     }
 }

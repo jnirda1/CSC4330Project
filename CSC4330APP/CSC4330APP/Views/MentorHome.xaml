@@ -22,7 +22,7 @@
                             <ImageButton  Source="ic_home" WidthRequest="100" HorizontalOptions="StartAndExpand" Clicked="Home_Clicked"  ></ImageButton>
                         </StackLayout>
                         <StackLayout Grid.Row="0" Grid.Column="1">
-                            <ImageButton  Source="ic_add" WidthRequest="100" HorizontalOptions="StartAndExpand" Clicked="Add_Clicked"  ></ImageButton>
+                            <ImageButton  Source="ic_add" WidthRequest="100" HorizontalOptions="StartAndExpand" Clicked="AddAOI_Clicked"  ></ImageButton>
                         </StackLayout>
                         <StackLayout Grid.Row="0" Grid.Column="2">
                             <ImageButton  Source="ic_search" WidthRequest="100" HorizontalOptions="Center" Clicked="Search_Clicked"></ImageButton>

@@ -39,12 +39,12 @@ namespace CSC4330APP.Views
 
         async void Search_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new StudentSearch());
+            await Navigation.PushAsync(new StudentSearch(userNameLookup));
         }
 
-        async void Add_Clicked(object sender, EventArgs e)
+        async void AddAOI_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new StudentAddAOI());
+            await Navigation.PushAsync(new AreaOfInterest(userNameLookup));
         }
 
         async void Mymentors_Clicked(object sender, EventArgs e)

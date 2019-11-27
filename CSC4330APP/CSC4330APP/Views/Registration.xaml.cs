@@ -141,22 +141,22 @@ namespace CSC4330APP.Views
         }
      
 
-        async void Handle_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            var email = EmailEntry.Text;
-            Label errorLabel = ((Entry)sender).FindByName<Label>("errorMessage");
-            var emailPattern = @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$";
-            if (System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern))
-            {
+        //async void Handle_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    var email = EmailEntry.Text;
+        //    Label errorLabel = ((Entry)sender).FindByName<Label>("errorMessage");
+        //    var emailPattern = @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$";
+        //    if (System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern))
+        //    {
 
-                errorMessage.Text = "Email is valid";
-            }
-            else
-            {
+        //        errorMessage.Text = "Email is valid";
+        //    }
+        //    else
+        //    {
 
-                errorMessage.Text = "EMail is InValid";
-            }
-        }
+        //        errorMessage.Text = "EMail is InValid";
+        //    }
+        //}
         //void HandleTextChanged(object sender, TextChangedEventArgs e)
         //{
 

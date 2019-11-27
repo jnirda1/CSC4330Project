@@ -46,7 +46,7 @@
                     </StackLayout>
                     <StackLayout Grid.Row="4">
                         <Entry Placeholder="University Email" FontSize="16" x:Name="EmailEntry" />
-                        <Label x:Name="errorMessage" TextColor="Red" FontAttributes="Italic" />
+                        <!--<Label x:Name="errorMessage" TextColor="Red" FontAttributes="Italic" />-->
                     </StackLayout>
 
                     <StackLayout Grid.Row="5">
